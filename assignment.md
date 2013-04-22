@@ -217,6 +217,7 @@
 [distributed]: http://en.wikipedia.org/wiki/Distributed_system
 [synchronization]: http://en.wikipedia.org/wiki/Synchronization_(computer_science)
 [exception]: http://en.wikipedia.org/wiki/Exception_handling
+[DbC]: http://en.wikipedia.org/wiki/Design_by_contract
 [Eiffel]: http://en.wikipedia.org/wiki/Eiffel_(programming_language)#Design_by_Contract
 [macro]: http://en.wikipedia.org/wiki/Macro_(computer_science)
 [reflection]: http://en.wikipedia.org/wiki/Reflection_(computer_programming)
