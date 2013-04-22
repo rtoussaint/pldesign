@@ -6,21 +6,21 @@
 
 * What problem/needs are you trying to solve?
 * What tasks would be made easier using your language?
-* Do solutions exist already?
-* Are you designing a general purpose language or a domain-specific language?
+* Do [solutions](lang_list) exist already?
+* Are you designing a [general purpose][general] language or a [domain-specific][dsl] language?
 * Where do you see your language being used and by who?
 
 ## Core Paradigms and Programming Model
 
-* Some possible paradigms and considerations (not mutually exclusive, and
+* Some possible [paradigms][paradigm] and considerations (not mutually exclusive, and
     non-exhaustive)
-    * Object-oriented
+    * [Object-oriented][OO]
         * Inheritance model: classical vs prototypal, multiple inheritance,
         * Polymorphism, multiple dispatch
         * Encapsulation and protection
         * Handling primitives
         * Generics/templating
-    * Functional
+    * [Functional][functional]
         * Purely functional or impure?
         * How do you deal with side effects and state
         * Handling anonymous functions and function references
@@ -28,43 +28,43 @@
         * Dealing with deep recursion and stack overflows
         * Dealing with mutual recursion
         * Function overloading and/or polymorphism
-    * Imperative
+    * [Imperative][imperative]
         * Defining and navigating through procedures
         * What additional control structures are necessary?
-    * Declarative
+    * [Declarative][declarative]
         * General approach/algorithm for handling control flow
         * How to define relations and entities
         * Use of logic or constraints
-    * Event-driven
+    * [Event-driven][event]
         * How events are handled (triggering and registering)
         * Synchronization when reacting to events
-    * Data-flow/Reactive
+    * [Data-flow][flow]/[Reactive][reactive]
         * How do you listen and track dataflow changes
-    * Pipes and filters
+    * [Pipes and filters][unix]
         * What unifying data structure would be used?
         * What protocols for communication would need to be established?
-    * Automata/State-machine based
+    * [Automata/State-machine][automata] based
 
 ## Type System
 
-* Static typing vs dynamic typing
+* [Static][static] typing vs [dynamic][] typing
     * Execution speed
     * Safety and exception handling
     * Tooling (e.g. IDEs, linters, etc.) support
-* Strong vs weak typing
+* [Strong][strong] vs [weak][] typing
     * Flexibility vs safety
     * Type coercion
-* Type inference
+* Type [inference][]
     * Is it even always possible?
-* Polymorphism derived from...
+* [Polymorphism][polymorphism] derived from...
     * Duck typing
     * Structural typing
-* Is there a unified type system with a clear bottom and/or top type?
-* Native primitives that may be useful/fundamental
+* Is there a [unified type system][unified] with a clear bottom and/or top type?
+* Native [primitives][] that may be useful/fundamental
 
 ## Core Control and Data Structures
 
-* Scoping rules
+* [Scoping][scope] rules
     * Block scope vs function scope
     * Implications on closures
 * Control Structures
@@ -85,12 +85,12 @@
 
 ## Memory Model
 
-* Mutable vs immutable data
+* Mutable vs [immutable][] data
     * Varying levels of (im)mutability
-* Garbage collected or manual memory management
+* [Garbage collected][GC] or manual memory management
     * Performance vs convenience
     * Varying levels of GC
-* Shared memory model
+* [Shared memory][shared] model
     * Sharing data
     * Security/protection from other contexts
     * Dealing with distributed nodes
@@ -99,10 +99,10 @@
 
 ## Implementation and Portability
 
-* Compiled vs interpreted
+* [Compiled][compiled] vs [interpreted][]
 * Target machine language
-    * Native bytecode
-    * Virtual machine
+    * [Native][native] bytecode
+    * [Virtual machine][vm]
         * Working off JVM vs custom VM
     * Embedded applications
 * Dependencies and interoperability with other languages
@@ -110,39 +110,39 @@
 
 ## Concurrency
 
-* Multi-threading vs green threads
-* Alternative concurrency models
+* [Multi-threading][multithreaded] vs [green threads][greenthreads]
+* Alternative [concurrency model][concurrency]
     * Actor model
     * Agent model
 * Communication
-    * Inter-process communication
-    * Message passing between nodes in a distributed system
-* How do you deal with synchronization?
+    * [Inter-process communication][ipc]
+    * Message passing between nodes in a [distributed system][distributed]
+* How do you deal with [synchronization][synchronization]?
 
 ## Reliability and Robustness
 
-* Exception and failure handling
+* [Exception][exception] and failure handling
     * Explicit control structures/types vs convention
     * Checked vs unchecked exceptions
 * Failure free vs expecting failure
     * How do you restore state?
-* Design by contract (see Eiffel)
+* [Design by contract][DbC] (see [Eiffel][])
 * Support for hot-swapping or updating code on the fly
 * How might your type system choices affect reliability?
 
 ## Metaprogramming
 
 * Ability to extend language
-    * Macro system
+    * [Macro][macro] system
     * Code as data (e.g. Lisp)
 * Maintain meta-data for analysis or documentation
     * Annotations
     * Type hinting
     * Type dependencies/relations
 * Code introspection and generation
-    * Reflection
-    * Decorators
-    * Runtime code generation facilities (see JIT compilation)
+    * [Reflection][reflection]
+    * [Decorators][decorators]
+    * Runtime code generation facilities (see [JIT][] compilation)
 
 ## Code Organization
 
@@ -179,3 +179,46 @@
 # Include some code examples here...
 # You can also do inline examples above if it helps to explain...
 ```
+
+
+[lang_list]: http://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+[general]: http://en.wikipedia.org/wiki/General-purpose_programming_language#Taxonomies
+[dsl]: http://en.wikipedia.org/wiki/Domain-specific_language
+[paradigm]: http://en.wikipedia.org/wiki/Programming_paradigm
+[OO]: http://en.wikipedia.org/wiki/Object-oriented_programming
+[functional]: http://en.wikipedia.org/wiki/Functional_programming
+[imperative]: http://en.wikipedia.org/wiki/Imperative_programming
+[declarative]: http://en.wikipedia.org/wiki/Declarative_programming
+[event]: http://en.wikipedia.org/wiki/Event-driven_programming
+[dataflow]: http://en.wikipedia.org/wiki/Dataflow_programming
+[reactive]: http://en.wikipedia.org/wiki/Reactive_programming
+[unix]: http://en.wikipedia.org/wiki/Pipe_and_filter
+[automata]: http://en.wikipedia.org/wiki/Automata-based_programming
+[static]: http://en.wikipedia.org/wiki/Type_system#Static_typing
+[dynamic]: http://en.wikipedia.org/wiki/Type_system#Dynamic_typing
+[strong]: http://en.wikipedia.org/wiki/Strong_and_weak_typing#Strong_typing 
+[weak]: http://en.wikipedia.org/wiki/Strong_and_weak_typing#Weak_typing
+[inference]: http://en.wikipedia.org/wiki/Type_inference
+[polymorphism]: http://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+[unified]: http://en.wikipedia.org/wiki/Type_system#Unified_Type_System
+[primitives]: http://en.wikipedia.org/wiki/Primitive_data_type
+[scope]: http://en.wikipedia.org/wiki/Scope_(computer_science)
+[immutable]: http://en.wikipedia.org/wiki/Immutable_object
+[GC]: http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+[shared]: http://en.wikipedia.org/wiki/Shared_memory
+[compiled]: http://en.wikipedia.org/wiki/Compiled_language
+[interpreted]: http://en.wikipedia.org/wiki/Interpreted_language
+[native]: http://en.wikipedia.org/wiki/Bytecode
+[vm]: http://en.wikipedia.org/wiki/Virtual_machine
+[multithreaded]: http://en.wikipedia.org/wiki/Multithreading_(computer_architecture)
+[greenthreads]: http://en.wikipedia.org/wiki/Green_threads
+[concurrency]: http://en.wikipedia.org/wiki/Concurrency_(computer_science)#Models
+[ipc]: http://en.wikipedia.org/wiki/Inter-process_communication
+[distributed]: http://en.wikipedia.org/wiki/Distributed_system
+[synchronization]: http://en.wikipedia.org/wiki/Synchronization_(computer_science)
+[exception]: http://en.wikipedia.org/wiki/Exception_handling
+[Eiffel]: http://en.wikipedia.org/wiki/Eiffel_(programming_language)#Design_by_Contract
+[macro]: http://en.wikipedia.org/wiki/Macro_(computer_science)
+[reflection]: http://en.wikipedia.org/wiki/Reflection_(computer_programming)
+[decorators]: http://wiki.python.org/moin/PythonDecorators
+[JIT]: http://en.wikipedia.org/wiki/Just-in-time_compilation
