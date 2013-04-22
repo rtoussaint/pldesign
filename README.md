@@ -37,6 +37,12 @@ Remember, there's a trade-off to everything.
 
 Sometimes less is more.
 
+# Appendix
+
+## Resources
+
+## Further Reading
+
 
 [dsl]: http://en.wikipedia.org/wiki/Domain-specific_language
 [semantics]: http://en.wikipedia.org/wiki/Semantics#Computer_science
