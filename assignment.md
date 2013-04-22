@@ -72,6 +72,7 @@
     * Branching
     * Recursive calls
     * Premature exiting
+    * Pattern matching
     * Eager vs lazy evaluation
     * Generators and list comprehensions
     * Continuations and coroutines
@@ -109,13 +110,62 @@
 
 ## Concurrency
 
+* Multi-threading vs green threads
+* Alternative concurrency models
+    * Actor model
+    * Agent model
+* Communication
+    * Inter-process communication
+    * Message passing between nodes in a distributed system
+* How do you deal with synchronization?
+
 ## Reliability and Robustness
+
+* Exception and failure handling
+    * Explicit control structures/types vs convention
+    * Checked vs unchecked exceptions
+* Failure free vs expecting failure
+    * How do you restore state?
+* Design by contract (see Eiffel)
+* Support for hot-swapping or updating code on the fly
+* How might your type system choices affect reliability?
 
 ## Metaprogramming
 
+* Ability to extend language
+    * Macro system
+    * Code as data (e.g. Lisp)
+* Maintain meta-data for analysis or documentation
+    * Annotations
+    * Type hinting
+    * Type dependencies/relations
+* Code introspection and generation
+    * Reflection
+    * Decorators
+    * Runtime code generation facilities (see JIT compilation)
+
+## Code Organization
+
+* Namespaces
+* Packages
+* Modules
+* Libraries and linking
+* Separating headers and implementation
+
 ## Tooling and Language Support
 
+* Can your language be easily analyzed statically
+    * What level of hinting/support might be possible
+* Support for debugging and setting up traps
+* Any special considerations for using IO devices?
+
 ## Other Unique Features
+
+* Whatever you can think of that you think would be useful
+* Examples
+    * Syntactic sugar (or why not just make your syntax cleaner to begin with)
+    * Native RegExp support if your language focuses on text manipulation
+    * Code synthesis (e.g. generating getters and setters)
 
 ## Conclusion
 
