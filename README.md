@@ -11,7 +11,8 @@ Please fork this repository and modify the [`assignment.md`](/assignment.md)
 document. We have provided a skeleton for your design document. Each section
 outlines some of the key points that you should discuss. Under each section are
 a series of bullet points that provide some considerations you may or may not
-want to talk about.
+want to talk about. You shouldn't incorporate all of them - they are just
+suggestions to get the ball rolling.
 
 When discussing the decisions you have made in designing your language, please
 justify each and weigh the pros and cons. Simply stating that your programming
@@ -30,9 +31,12 @@ will show through in your code examples; however, you may want to consider how
 the [grammar][] of your language is going to be structured.
 
 Make sure that your language actually comes together as a whole. Don't mash
-together contradictory features for the sake of doing so.
+together contradictory features just for the sake of doing so.
+
+Remember, there's a trade-off to everything.
 
 Sometimes less is more.
+
 
 [dsl]: http://en.wikipedia.org/wiki/Domain-specific_language
 [semantics]: http://en.wikipedia.org/wiki/Semantics#Computer_science
